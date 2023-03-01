@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DDYMZL/staticFlag/issues"
   },
-  "homepage": "https://github.com/DDYMZL/staticFlag#readme"
+  "homepage": "https://github.com/DDYMZL/staticFlag#readme",
+  "dependencies": {
+    "vue-demi": "^0.13.11"
+  }
 }
