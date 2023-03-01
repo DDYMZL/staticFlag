@@ -15,25 +15,24 @@ const defaultProps = {
 // vue-demi中isVue2和isVue3判断不生效，所以采用下面这种方式
 const isV3 = Object.keys(Vue).length > 10;
 
+const insertHTML = (el, value) => {
+  const { position, cssText, show } = value;
+  if (!show) return;
+  el.style.position = "relative";
+  staticDom.setAttribute("class", `static-box_date87234 ${position}`);
+  staticDom.style.cssText = cssText;
+  el.appendChild(staticDom);
+};
+
 const v3 = {
   mounted(el, { value = defaultProps }) {
-    const { position, cssText, show } = value;
-    if (!show) return;
-    el.style.position = "relative";
-    staticDom.setAttribute("class", `static-box_date87234 ${position}`);
-    staticDom.style.cssText = cssText;
-    el.appendChild(staticDom);
+    insertHTML(el, value);
   },
 };
 
 const v2 = {
   bind(el, { value = defaultProps }) {
-    const { position, cssText, show } = value;
-    if (!show) return;
-    el.style.position = "relative";
-    staticDom.setAttribute("class", `static-box_date87234 ${position}`);
-    staticDom.style.cssText = cssText;
-    el.appendChild(staticDom);
+    insertHTML(el, value);
   },
 };
 
