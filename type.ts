@@ -1,5 +1,5 @@
 export interface IProps {
-  position: string;
-  cssText: string;
-  show: boolean;
+  position?: string;
+  cssText?: string;
+  show?: boolean;
 }
