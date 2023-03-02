@@ -3,9 +3,6 @@ import { isVue3 } from "vue-demi";
 import staticPic from "./assets/static.png";
 import "./assets/index.css";
 
-const staticDom = document.createElement("div");
-staticDom.innerHTML = `<img src="${staticPic}" alt="">`;
-
 const defaultProps = {
   position: "right-bottom",
   cssText:
@@ -20,6 +17,8 @@ const defaultProps = {
 const insertHTML = (el, value) => {
   const { position, cssText, show } = value;
   if (!show) return;
+  const staticDom = document.createElement("div");
+  staticDom.innerHTML = `<img src="${staticPic}" alt="">`;
   el.style.position = "relative";
   staticDom.setAttribute("class", `static-box_date87234 ${position}`);
   staticDom.style.cssText = cssText;
