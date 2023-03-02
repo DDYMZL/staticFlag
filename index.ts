@@ -1,4 +1,5 @@
-import { Vue } from "vue-demi";
+// import { Vue, isVue3 } from "vue-demi";
+import { isVue3 } from "vue-demi";
 import staticPic from "./assets/static.png";
 import "./assets/index.css";
 
@@ -12,8 +13,9 @@ const defaultProps = {
   show: false,
 };
 
-// vue-demi中isVue2和isVue3判断不生效，所以采用下面这种方式
-const isV3 = Object.keys(Vue).length > 10;
+// vue-demi在本地调试isVue2和isVue3判断存在问题
+// 在vue2的项目打印isVue2 为false
+// const isV3 = Object.keys(Vue).length > 10;
 
 const insertHTML = (el, value) => {
   const { position, cssText, show } = value;
@@ -36,4 +38,4 @@ const v2 = {
   },
 };
 
-export default isV3 ? v3 : v2;
+export default isVue3 ? v3 : v2;
