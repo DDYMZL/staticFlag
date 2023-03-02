@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DDYMZL/staticFlag#readme",
   "dependencies": {
+    "@vue/composition-api": "^1.7.1",
     "vue-demi": "^0.13.11"
   }
 }
