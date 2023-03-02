@@ -30,15 +30,6 @@ Vue.directive("staticflag", staticflag);
 
 ## 快速使用
 
-- 直接使用指令，不需要入参
-
-```js
-<div v-staticflag>
-  <CustomComponents />
-  ....
-</div>
-```
-
 - 使用参数 v-staticflag="{ ... }"，参数配置
 
 | 名称           | 说明                                                                             | 类型    | 默认值       | 可选值                                                                                                                      |
