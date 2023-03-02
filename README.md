@@ -32,8 +32,8 @@ Vue.directive("staticflag", staticflag);
 
 - 使用参数 v-staticflag="{ ... }"，参数配置
 
-| 名称           | 说明                                                                             | 类型    | 默认值       | 可选值                                                                                                                      |
-| :------------- | :------------------------------------------------------------------------------- | :------ | :----------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| 位置           | 静态标识基于绑定元素的显示位置                                                   | string  | right-bottom | left-top / left-center / left-bottom / top-center / bottom-center / center-center / right-top / right-center / right-bottom |
-| 需要更改的样式 | 参考 [cssText](https://developer.mozilla.org/zh-CN/docs/Web/API/CSSRule/cssText) | string  | -            | -                                                                                                                           |
-| 是否显示       | 控制静态标识的显示                                                               | boolean | false        | -                                                                                                                           |
+| 名称           | 说明                                                                             | 类型    | 是否必传 | 默认值       | 可选值                                                                                                                      |
+| :------------- | :------------------------------------------------------------------------------- | :------ | :------- | :----------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| 位置           | 静态标识基于绑定元素的显示位置                                                   | string  | 是       | right-bottom | left-top / left-center / left-bottom / top-center / bottom-center / center-center / right-top / right-center / right-bottom |
+| 需要更改的样式 | 参考 [cssText](https://developer.mozilla.org/zh-CN/docs/Web/API/CSSRule/cssText) | string  | 否       | -            | -                                                                                                                           |
+| 是否显示       | 控制静态标识的显示                                                               | boolean | 否       | false        | -                                                                                                                           |
