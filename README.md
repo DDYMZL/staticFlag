@@ -5,11 +5,11 @@
 ## 安装
 
 ```bash
-npm i staticFlag -D
+npm i staticflag -D
 
 or
 
-yarn add staticFlag -D
+yarn add staticflag -D
 ```
 
 ## 注册：vue3 和 vue2 的引入注册方式大同小异
