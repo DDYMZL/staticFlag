@@ -25,32 +25,32 @@
   left: 0;
 }
 
-.top-center {
+.static-box_date87234.top-center {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
 }
-.bottom-center {
+.static-box_date87234.bottom-center {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
 }
-.center-center {
+.static-box_date87234.center-center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.right-top {
+.static-box_date87234.right-top {
   top: 0;
   right: 0;
 }
-.right-center {
+.static-box_date87234.right-center {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
 }
-.right-bottom {
+.static-box_date87234.right-bottom {
   bottom: 0;
   right: 0;
 }
