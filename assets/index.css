@@ -11,16 +11,16 @@
   height: 100%;
 }
 
-.left-top {
+.static-box_date87234.left-top {
   top: 0;
   left: 0;
 }
-.left-center {
+.static-box_date87234.left-center {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-.left-bottom {
+.static-box_date87234.left-bottom {
   bottom: 0;
   left: 0;
 }
