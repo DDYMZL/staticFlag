@@ -14,7 +14,7 @@ const defaultProps = {
 // 在vue2的项目打印isVue2 为false
 // const isV3 = Object.keys(Vue).length > 10;
 
-const insertHTML = (el, value) => {
+const insertHTML = (el: HTMLElement, value: {position: string; cssText: string; show: boolean }) => {
   const { position, cssText, show } = value;
   if (!show) return;
   const staticDom = document.createElement("div");
@@ -26,13 +26,13 @@ const insertHTML = (el, value) => {
 };
 
 const v3 = {
-  mounted(el, { value = defaultProps }) {
+  mounted(el: HTMLElement, { value = defaultProps }) {
     insertHTML(el, value);
   },
 };
 
 const v2 = {
-  bind(el, { value = defaultProps }) {
+  bind(el: HTMLElement, { value = defaultProps }) {
     insertHTML(el, value);
   },
 };
